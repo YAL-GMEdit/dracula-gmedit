@@ -1,0 +1,196 @@
+/* scrollbars */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+	background-color: #282A36;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #191A21;
+	border-color: #282A36;
+	border-width: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #44475a;
+}
+
+/* line number area */
+#main .ace-tm .ace_gutter {
+	background-color: #282A36;
+	border-right-color: #282A36;
+}
+#main .ace_gutter-active-line {
+	background-color: rgba(71,75,102,0.161);
+}
+
+/* treeview */
+.treeview {
+	background-color: #282A36;
+}
+.treeview .dir > .header:before {
+	background-image: url(treeview.png?r4);
+	background-position: 0 0;
+}
+.treeview .dir.open > .header:before {
+	background-position: -16px 0;
+}
+.treeview .dir.is-empty > .header:before {
+	background-position: -32px 0;
+}
+.treeview .dir.is-empty.open > .header:before {
+	background-position: -48px 0;
+}
+
+/* splitters */
+#splitter-td, .splitter-td {
+	border: none;
+	background: #282A36;
+}
+#misc-splitter-td {
+	background: #282A36;
+}
+/* hide the fact that the splitter goes all the way to the window border... again! */
+#splitter-td {
+	background: #21222C;
+}
+#splitter-td:before {
+	content: "";
+	background: #282A36;
+	position: relative;
+	top: 32px;
+	height: calc(100% - 32px);
+	width: 100%;
+	display: block;
+	box-shadow: 0 -0.05em rgba(0,0,0,0.5);
+}
+/* fancy stripe on splitter mouseover (can't keep up with rendering)
+.splitter-td:not(#splitter-td):hover, #splitter-td:hover:before {
+	background: repeating-linear-gradient(-45deg, #44475a 0px, #44475a 5px, #282A36 5px, #282A36 10px);
+}
+*/
+
+/* tabs */
+.chrome-tabs.chrome-tabs-dark-theme {
+	box-shadow: none;
+	background: #21222C;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab .chrome-tab-background > svg .chrome-tab-background {
+	fill: #21222C;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab:not(.chrome-tab-current):hover .chrome-tab-background > svg .chrome-tab-background {
+	fill: #44475a;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab.chrome-tab-current .chrome-tab-background > svg .chrome-tab-background {
+	fill: #282A36;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tabs-bottom-bar {
+	background: #282A36;
+}
+
+/* popouts/preferences */
+.popout-window {
+	background: #282A36;
+}
+.popout-window input[type="text"], .popout-window select {
+	background: black;
+}
+
+/* status bar styling */
+#main .ace_status-bar {
+	background-color: #282A36;
+	/* simulates 1-pixel padding on top */
+	border-color: #282A36;
+	box-shadow: 0 1px 0px #191A21 inset;
+}
+#main .ace_status-comp {
+	border-color: #191A21;
+}
+
+/* indents/print margin */
+#main .ace-tm .ace_print-margin {
+	background-color: #191A21;
+}
+#main .ace_indent-guide {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAOSURBVBhXYwCDpKIl/wEFLwJ4geLRfQAAAABJRU5ErkJggg==');
+	background-position: middle right;
+}
+
+/* auto-generated: */
+#main .ace-tm {
+	background-color: #282A36;
+}
+#main .ace-tm .ace_selected-word {
+	background-color: #181A1F;
+}
+#main .ace-tm .ace_active-line {
+	background-color: rgba(71,75,102,0.161);
+}
+#main .ace-tm .ace_selection {
+	background-color: rgba(68,71,90,0.702);
+}
+#main .ace-tm {
+	color: #F8F8F2;
+}
+#main .ace-tm .ace_comment,
+#main .ace-tm .ace_eventtext {
+	color: #6272A4;
+}
+#main .ace-tm .ace_constant,
+#main .ace-tm .ace_extmacro {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_string {
+	color: #F1FA8C;
+}
+#main .ace-tm .ace_numeric,
+#main .ace-tm .ace_momenttime {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_variable {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_field,
+#main .ace-tm .ace_localfield {
+	color: #A2A5CC;
+}
+#main .ace-tm .ace_function,
+#main .ace-tm .ace_extfunction {
+	color: #72E58E;
+}
+#main .ace-tm .ace_script {
+	color: #72E58E;
+}
+#main .ace-tm .ace_asset,
+#main .ace-tm .ace_namespace,
+#main .ace-tm .ace_type {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_enum {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_enumfield {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_macro,
+#main .ace-tm .ace_macroname {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_local,
+#main .ace-tm .ace_sublocal {
+	color: #BD93F9;
+}
+#main .ace-tm .ace_globalvar,
+#main .ace-tm .ace_globalfield {
+	color: #C7C6E5;
+}
+#main .ace-tm .ace_keyword,
+#main .ace-tm .ace_preproc {
+	color: #FF79C6;
+}
+#main .ace-tm .ace_curly.ace_paren {
+	color: #FF79C6;
+}
+#main .ace-tm .ace_gutter {
+	color: #6272A4;
+	font-style: normal;
+	font-weight: bold;
+}
