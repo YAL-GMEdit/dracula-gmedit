@@ -25,6 +25,7 @@
 /* treeview */
 .treeview {
 	background-color: #282A36;
+	--treeview-background-color: #282A36;
 }
 .treeview .dir > .header:before {
 	background-image: url(treeview.png?r4);
