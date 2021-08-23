@@ -1,3 +1,7 @@
+:root {
+	--color-background: #282A36;
+	--color-primary: #6272A4;
+}
 /* scrollbars */
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track,
@@ -63,11 +67,17 @@
 	display: block;
 	box-shadow: 0 -0.05em rgba(0,0,0,0.5);
 }
+html[data-multiline-tabs] #splitter-td:before {
+	top: calc(4px + var(--chrome-tabs-height));
+}
 /* fancy stripe on splitter mouseover (can't keep up with rendering)
 .splitter-td:not(#splitter-td):hover, #splitter-td:hover:before {
 	background: repeating-linear-gradient(-45deg, #44475a 0px, #44475a 5px, #282A36 5px, #282A36 10px);
 }
 */
+.chrome-tabs .chrome-tab.chrome-tab-pinned svg .chrome-tab-pinline {
+	fill: #72E58E;
+}
 
 /* tabs */
 .chrome-tabs.chrome-tabs-dark-theme {
